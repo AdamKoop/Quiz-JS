@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="Shortcut Icon" type="image/x-icon"  href="./images/favicon.ico">
 <title>Quiz-JS</title>
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="./css/switch.css">
@@ -11,15 +12,28 @@
   
   <section id="page">
     <div id="switch_eng_ru">
-      <button id="switch_ru">RUS</button> 
+      <button class="select" id="switch_ru">RUS</button> 
       |
-      <button id="switch_eng">ENG</button>
+      <button class="select" id="switch_eng">ENG</button>
     </div>
     <div id="logo">
       <img id="logo_pictures" src="images/light-bulb.png" alt="lorem">
-      <p id="logo_text">LumbDev</p>
+      <p id="logo_text">Quiz</p>
     </div>
-    <nav></nav>
+    <nav>
+      <div>
+      <h1 class="unit">Добро пожаловать на викторину по JavaScript</h1>
+      </div>
+      <div id="item">
+        <p>У вас есть 75 секунд, чтобы ответить на вопросы, проверяющие ваши знания основ JavaScript.</p>
+        <p>Неправильные ответы имеют 10-секундный штраф!</p>
+        <p>Получите ли вы высокий балл?</p>
+        <p>Удачи в решении !!!</p>
+      </div>
+      <div>
+        <button id="begin_ru_but">Начать</button>
+      </div>   
+    </nav>
     <main>
       <img id="clue_girl" src="images/girl.png" alt="lorem" width="235px" height="228px">
       <div class="box">
@@ -37,6 +51,7 @@
 
   <script type="text/javascript" src="./js/script.js"></script>
   <script type="text/javascript" src="./js/girl.js"></script>
+  <script type="text/javascript" src="./js/lang.js"></script>
 
 </body>
 </html>

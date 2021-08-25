@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+body{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+  background-color:black;
+}
+
+#page {
+  margin:20px 100px;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 10px;
+  width: 1200px;
+  height: 800px;
+  grid-template:  "head switch" 
+                  "nav  main"  
+                  "nav  foot" 
+                 
+}
+
+#logo {
+  grid-area: head;
+  grid-template:"lp lt";
+  display:grid;
+  height: 60px;
+  width: 300px;
+}
+ #logo_pictures {
+  width: 60px;
+  height: 60px;
+  grid-area:lp;
+  border-radius: 16px;
+}
+
+#logo_text{
+  margin-top:0px;
+  margin-left:10px;
+  grid-area:lt;
+  color:white;
+  font-family: Roboto Slab;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 240px;
+}
+
+nav {
+  grid-area: nav;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width:800px;
+  height: 516px;
+  background: #FFFA6C;
+  border-radius: 12px;
+}
+
+h1 {
+  font-family: Roboto Slab;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: black;
+  color: white;
+  height: 69px;
+  width: 587px;
+  left: 170px;
+  top: 161px;
+  border-radius: 6px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#item{
+  height: 294px;
+  width: 625px;
+  left: 154px;
+  top: 244px;
+  border-radius: 10px;
+  background-color: black;
+  color:white;
+}
+
+p{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  justify-content: center;
+}
+
+#begin_ru_but{
+  background:black;
+  color:white;
+  outline: none; 
+  border: 0;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width: 231px;
+  height: 57px;
+  border-radius:10px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top:10px;
+}
+
+#begin_ru_but:active{
+  color:white;
+  outline: none; 
+  border: 0;
+}
+
+
+main {
+  background-color: yellow;
+  grid-area: main;
+  width:240px;
+  height:240px;
+  border-radius:10px;
+}
+
+#footer {
+  grid-area: foot;
+  margin-top:-110px;
+  border-radius:10px;
+  width:240px;
+  height:240px;
+  background-color:#F7DF1E;
+  border-radius:10px;
+  position:relative;
+}
+
+#footer_text{
+  position: absolute;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size:200px;
+  margin-left:150px;
+  margin-top:160px;
+  font-weight:bold
+}
+
+#footer #footer_text{
+  position: absolute;
+	color: rgb(0, 0, 0);
+	transform:translate(-50%,-50%);
+	font-size:8em;
+}
+
+#footer #footer_text:nth-child(1)
+{
+	color: rgb(255, 255, 255);
+	-webkit-text-stroke: 0.1px black;
+}
+#footer #footer_text:nth-child(2)
+{
+	color:#000000;
+	animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate
+{
+	0%,100%
+	{
+		clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+	}
+   50%
+	{
+		clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+	}
+}
+
+#switch_eng_ru{
+  color:white;
+  margin-top:0px;
+  grid-area:switch;
+  width:300px;
+  font-family: Roboto Slab;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0em;
+  height: 50px;
+}
+
+#switch_ru{
+  color:white;
+  grid-area:switch;
+  width:110px;
+  font-family: Roboto Slab;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0em;
+  height: 66px;
+  outline: none; 
+  border: 0;
+  background: transparent;
+}
+
+#switch_eng{
+  color:white;
+  grid-area:switch;
+  width:110px;
+  font-family: Roboto Slab;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0em;
+  height: 66px;
+  outline: none; 
+  border: 0;
+  background: transparent;
+}
+
+a:hover{
+ border-bottom:white solid 3px;
+}
+
+#clue_girl{
+  position: absolute;
+  top:181px;
+}
+
+.box
+{
+  display:flex;
+  position:static;
+  margin-top:108px;
+  margin-left:54px;
+}
+
+.box .eye
+{
+	position:relative;
+	width:28px;
+	height:28px;
+	display:block;
+	background:white;
+	margin:0px 18px;
+	border-radius:50%;
+	           
+}
+
+.box .eye::before
+{
+	 content:'';
+	 position:absolute;
+	 top:50%;
+	 left:12px;
+	 transform:translate(-50%,-50%);
+	 width:14px;
+	 height:14px; 
+	 border-radius:50%;
+	 background:black;
+	 border:4px solid #2196f3;
+	 box-sizing:border-box;
+}
