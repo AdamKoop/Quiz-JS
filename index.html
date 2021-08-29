@@ -2,36 +2,35 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="Shortcut Icon" type="image/x-icon"  href="./images/favicon.ico">
-<title>Quiz-JS</title>
+<link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+<title>Quiz</title>
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="./css/switch.css">
 </head>
 
 <body>
-  
-  <section id="page">
-    <div id="switch_eng_ru">
-      <button class="select" id="switch_ru">RUS</button> 
-      |
-      <button class="select" id="switch_eng">ENG</button>
-    </div>
+
+  <div id="page">
+    
     <div id="logo">
-      <img id="logo_pictures" src="images/light-bulb.png" alt="lorem">
+      <img id="logo_pictures" src="images/puzzle-piece.png" alt="lorem">
       <p id="logo_text">Quiz</p>
     </div>
+
+    <div id="switch_eng_ru">
+      <input id="lang" type='checkbox' onclick="changeLagnuage()">
+      <label class="select" class="rus" for="lang" id="switch_ru">RUS</label> 
+      |
+      <label class="select" class="eng" for="lang" id="switch_eng">ENG</label>
+    </div>
+    
     <nav>
       <div>
-      <h1 class="unit">Добро пожаловать на викторину по JavaScript</h1>
+      <h1 class="unit" text="hello"></h1>
       </div>
-      <div id="item">
-        <p>У вас есть 75 секунд, чтобы ответить на вопросы, проверяющие ваши знания основ JavaScript.</p>
-        <p>Неправильные ответы имеют 10-секундный штраф!</p>
-        <p>Получите ли вы высокий балл?</p>
-        <p>Удачи в решении !!!</p>
-      </div>
+      <div id="item" text="lorem"></div>
       <div>
-        <button id="begin_ru_but">Начать</button>
+        <button id="begin_ru_but" text="butbegin"></button>
       </div>   
     </nav>
     <main>
@@ -41,13 +40,25 @@
         <div class="eye"></div>
         </div>
     </main>
-    <div>
       <div id="footer">
         <div id="footer_text">JS</div>
         <div id="footer_text">JS</div>
       </div>    
-    </div>
-  </section>
+      <footer>
+        <div id="logo_footer">
+         <img id="logo_pictures_footer" src="images/light-bulb.png" alt="lorem">
+         <p id="logo_text_footer">LumbDev</p>
+        </div>
+       <div id="arrive_lang">
+        <img class="arrive" src="images/arrive/c-logo.png" alt="lorem">
+        <img class="arrive" src="images/arrive/csharp-logo.png" alt="lorem" >
+        <img class="arrive" src="images/arrive/java.png" alt="lorem">
+        <img class="arrive" src="images/arrive/php-programming-language.png" alt="lorem">
+        <img class="arrive" src="images/arrive/python.png" alt="lorem">
+       </div>
+    </footer>
+  </div>
+  </div>
 
   <script type="text/javascript" src="./js/script.js"></script>
   <script type="text/javascript" src="./js/girl.js"></script>

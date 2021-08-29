@@ -19,8 +19,64 @@ body{
   grid-template:  "head switch" 
                   "nav  main"  
                   "nav  foot" 
-                 
+                  "footer footer"
 }
+
+footer{
+  display: grid;
+  grid-area:footer;
+  grid-template: "lf al";
+  width:1200px;
+  height:100px;
+  grid-column-gap:330px;
+}
+
+#arrive_lang{
+  display:flex;
+  flex-direction: row;
+  grid-area:al;
+  width:600px;
+  height:60;
+  margin-top:-38px;
+  margin:-20 -20px;
+}
+
+.arrive{
+  flex: 1 1 1 1 1;
+  margin: auto 20px;
+  width:60px;
+  height:60px;
+}
+
+#logo_footer {
+  grid-area:lf;
+  display:grid;
+  height: 60px;
+  width: 300px;
+}
+
+ #logo_pictures_footer {
+  width: 50px;
+  height: 50px;
+  grid-area:lp;
+  border-radius: 2px;
+}
+
+#logo_text_footer{
+  margin-top:-10px;
+  margin-left:70px;
+  grid-area:lt;
+  color:white;
+  font-family: Roboto Slab;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 240px;
+}
+
 
 #logo {
   grid-area: head;
@@ -33,7 +89,7 @@ body{
   width: 60px;
   height: 60px;
   grid-area:lp;
-  border-radius: 16px;
+  border-radius: 4px;
 }
 
 #logo_text{
@@ -59,7 +115,7 @@ nav {
   justify-content: center;
   width:800px;
   height: 516px;
-  background: #FFFA6C;
+  background:#fdf73e;
   border-radius: 12px;
 }
 
@@ -133,7 +189,7 @@ p{
 
 
 main {
-  background-color: yellow;
+  background-color: #fdf73e;
   grid-area: main;
   width:240px;
   height:240px;
@@ -142,11 +198,12 @@ main {
 
 #footer {
   grid-area: foot;
-  margin-top:-110px;
   border-radius:10px;
   width:240px;
   height:240px;
-  background-color:#F7DF1E;
+  margin-top:-24px;
+  margin-right:50px;
+  background-color:#fdf73e;
   border-radius:10px;
   position:relative;
 }
@@ -192,8 +249,9 @@ main {
 }
 
 #switch_eng_ru{
+  position: absolute;
   color:white;
-  margin-top:0px;
+  margin-left:850px;
   grid-area:switch;
   width:300px;
   font-family: Roboto Slab;
@@ -208,33 +266,23 @@ main {
 #switch_ru{
   color:white;
   grid-area:switch;
-  width:110px;
-  font-family: Roboto Slab;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 63px;
-  letter-spacing: 0em;
+  width:104px;
   height: 66px;
   outline: none; 
   border: 0;
   background: transparent;
+  padding:2px;
 }
 
 #switch_eng{
   color:white;
   grid-area:switch;
-  width:110px;
-  font-family: Roboto Slab;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 63px;
-  letter-spacing: 0em;
+  width:104px;
   height: 66px;
   outline: none; 
   border: 0;
   background: transparent;
+  padding:2px;
 }
 
 a:hover{
@@ -243,7 +291,7 @@ a:hover{
 
 #clue_girl{
   position: absolute;
-  top:181px;
+  top:136px;
 }
 
 .box
@@ -279,4 +327,8 @@ a:hover{
 	 background:black;
 	 border:4px solid #2196f3;
 	 box-sizing:border-box;
+}
+
+#lang{
+  filter: blur(100px);
 }
