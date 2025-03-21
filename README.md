@@ -3,6 +3,5 @@ asdasdqad
 asdsadsadasdas
 asdasdasdadadadasdasasd
 dadqadadssssssaddsadasываdsdadasd
-sasdsad
-sdasdasdasdываывавыавыавыа
+sasdsadыва
 sddasdsadasdasdавыаыва
